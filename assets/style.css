@@ -1,0 +1,153 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -5%;
+}
+.container {
+    border: 3px solid rgb(255, 0, 0);
+    box-shadow: 0 0 20px rgb(255, 3, 3);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="checkbox"],
+select {
+    padding: 5px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    background-color: cyan;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-right: auto;
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="checkbox"],
+select {
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.custom-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: cyan;
+    color: black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(3px);
+    background: linear-gradient(to right, #F36265, #961276, #3080db, #ca6c00);
+    animation: animateBackground 1s linear infinite;
+}
+
+.github-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.github-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.discord-container {
+    position: fixed;
+    bottom: 35px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.discord-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.github-container img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.discord-container img {
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.github-text {
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.discord-text {
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+@keyframes animateBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
